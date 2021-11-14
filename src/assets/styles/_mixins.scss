@@ -1,0 +1,30 @@
+@mixin getLightFont() {
+  font-weight: 300;
+}
+
+@mixin getLightItalicFont() {
+  @include getLightFont();
+  font-style: italic;
+}
+
+@mixin getRegularFont() {
+  font-weight: 400;
+}
+
+@mixin getRegularItalicFont() {
+  @include getRegularFont();
+  font-style: italic;
+}
+
+@mixin getMediumFont() {
+  font-weight: 500;
+}
+
+@mixin getBoldFont() {
+  font-weight: 700;
+}
+
+@mixin getBoldItalicFont() {
+  @include getRegularFont();
+  font-style: italic;
+}
