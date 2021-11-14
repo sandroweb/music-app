@@ -1,8 +1,12 @@
 import { Layout } from 'components';
+import { Provider } from 'react-redux';
+import { getStore } from 'store/Store';
 
 function App() {
   return (
-    <Layout />
+    <Provider store={getStore()}>
+      <Layout />
+    </Provider>
   );
 }
 
