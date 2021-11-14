@@ -1,7 +1,14 @@
+import { Main } from "pages";
+import { Fragment } from "react";
+import { ToastContainer } from "react-toastify";
+
 const Layout = () => {
-    return (
-        <h1>Layout</h1>
-    )
-  }
-  
-  export default Layout;
+  return (
+    <Fragment>
+      <Main />
+      <ToastContainer />
+    </Fragment>
+  )
+}
+
+export default Layout;
