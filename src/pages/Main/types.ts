@@ -1,3 +1,7 @@
+import IMusicAlbum from "interfaces/IMusicAlbum";
+
 export interface MainContext {
-  reload: () => void
+  reload: () => void;
+  albums: IMusicAlbum[];
+  firstLoading: boolean;
 }

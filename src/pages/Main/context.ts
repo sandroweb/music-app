@@ -3,4 +3,6 @@ import { MainContext } from './types';
 
 export default createContext<MainContext>({
   reload: () => {},
+  albums: [],
+  firstLoading: true,
 });
